@@ -1,8 +1,24 @@
-const addToFrontOrBack = () => {
+const addToFrontOrBack = (arr, value, isFront) => {
+  if (isFront === true) {
+    arr.unshift(value)
+    return
+  }
+
+  arr.push(value)
+  return
+};
+// const hey = ['h', 'e', 'y']
+// console.log(hey)
+// console.log(addToFrontOrBack(hey, 'y', false))
+// console.log(hey)
+
+const reverseString = (str) => {
+  return str.split('').reverse().join('')
 };
 
-const reverseString = () => {
-};
+// let g = 'god'
+// console.log(reverseString(g))
+// console.log(g)
 
 const newArrayFullOf = () => {
 };
