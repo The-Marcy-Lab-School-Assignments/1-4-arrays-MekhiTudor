@@ -20,20 +20,46 @@ const reverseString = (str) => {
 // console.log(reverseString(g))
 // console.log(g)
 
-const newArrayFullOf = () => {
+const newArrayFullOf = (value, numOfValues) => {
+  let arr = new Array(numOfValues) //created blank template for values
+  return arr.fill(value)
 };
 
-const insertIntoMiddle = () => {
+//console.log(newArrayFullOf(1, 5))
+
+
+const insertIntoMiddle = (arr, value) => {
+  arr.splice(Math.floor(arr.length / 2), 0, value)
+  return
 };
 
-const deleteFromMiddle = () => {
+// const arr1 = [1, 2, 3, 4, 5];
+// console.log(insertIntoMiddle(arr1, 6))
+
+const deleteFromMiddle = (arr) => {
+  arr.splice(Math.floor(arr.length / 2), 1)
+  return
 };
 
-const isRightIndex = () => {
+// const arr1 = [1, 2, 3, 4, 5];
+// deleteFromMiddle(arr1)
+//console.log(arr1)
+
+const isRightIndex = (arr, value, index) => {
+  return arr[index] === value ? true : false;
 };
 
-const roundAllNumsDown = () => {
+
+const roundAllNumsDown = (arr) => {
+  const newArr = []
+  for (let i = 0; i < arr.length; i++) {
+    newArr.push(Math.floor(arr[i]))
+  }
+  return newArr
 };
+
+// const arr1 = [1.1, 2.2, 3.3]
+// console.log(roundAllNumsDown(arr1))
 
 const getAllYCoordinates = () => {
 };
