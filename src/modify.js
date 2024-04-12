@@ -1,3 +1,4 @@
+/** FEEDBACK: Great job! in the future, ensure to remove any commented out code! */
 const uppercaseAll = (...str) => {
   const newArr = [];
   for (const i of str) {
